@@ -129,20 +129,23 @@ h2 {
 .quartos-cards {
   max-width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: stretch;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
 .card-quartos {
-  flex: 0 1 33%;
+  flex: 0 1 327px;
   display: flex;
   flex-direction: column;
   gap: 20px;
   border-bottom: 2px solid #49997c;
+  align-items: stretch;
 }
 
 .card-quartos img {
-  max-width: 100%;
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
@@ -186,6 +189,7 @@ h2 {
 .pousada-card {
   display: flex;
   width: calc(50% - 20px);
+  flex: 1 1 490px;
   justify-content: space-between;
   text-align: left;
   align-items: center;
@@ -193,6 +197,7 @@ h2 {
 
 .descricao {
   width: 70%;
+  height: 100%;
   padding: 16px;
   display: flex;
   flex-direction: column;
@@ -200,7 +205,7 @@ h2 {
 }
 
 .container-img {
-  height: 148px;
+  height: 100%;
   width: 148px;
 }
 
@@ -222,9 +227,9 @@ footer {
   max-width: 1024px;
   margin: auto;
   display: flex;
-  justify-content: space-between;
-  gap: 20px;
+  gap: 40px;
   border-bottom: 2px solid #396d5a;
+  flex-wrap: wrap;
 }
 
 .contato div {
@@ -235,11 +240,14 @@ footer {
   margin-bottom: 20px;
 }
 
-.contato div img,
 .contato div a {
-  flex: 1 1 auto;
   color: white;
   text-decoration: none;
+  width: 150px;
+}
+
+.contato div img {
+  width: 40px;
 }
 
 .contato div a:hover {
