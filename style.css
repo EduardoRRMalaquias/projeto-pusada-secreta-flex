@@ -1,0 +1,252 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Sans Pro", "sans-serif";
+}
+
+.limita-largura {
+  max-width: 1024px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* header */
+
+header {
+  background-color: white;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  box-shadow: 50px 50px 50px red;
+}
+
+header > .limita-largura {
+  justify-content: space-between;
+  flex-direction: row;
+  width: 1024px;
+}
+
+.logo {
+  text-decoration: none;
+  color: #404343;
+}
+
+.logo h1 {
+  font-weight: 400;
+}
+
+.logo span {
+  color: #7192c2;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+nav ul a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: #404343;
+  text-transform: uppercase;
+  display: block;
+}
+
+nav ul a:hover {
+  color: #7192c2;
+}
+
+/* banner*/
+
+.banner {
+  background-color: #49997c;
+  background-image: url(img/img-fundo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.banner div {
+  padding: 50px;
+  background-color: #49997ccc;
+  border: 1px solid white;
+  border-radius: 4px;
+  gap: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.banner div h1 {
+  font-size: 4rem;
+  color: white;
+}
+
+.banner div p {
+  font-size: 2rem;
+  color: white;
+  line-height: 4rem;
+}
+
+/*quartos*/
+
+.quartos {
+  background-color: white;
+  padding: 80px;
+  text-align: center;
+}
+
+h2 {
+  color: #404343;
+  font-weight: 400;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+}
+
+.quartos p {
+  line-height: 2rem;
+}
+
+.quartos-cards {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.card-quartos {
+  flex: 0 1 33%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-bottom: 2px solid #49997c;
+}
+
+.card-quartos img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-quartos h3 {
+  margin-bottom: 20px;
+}
+
+.card-quartos h3 a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  color: #404343;
+}
+
+/* rota */
+
+.Rota {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+}
+
+/* sobre-pousad */
+
+.sobre-pousada {
+  padding: 80px;
+  text-align: center;
+}
+
+.pousada {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.pousada-card {
+  display: flex;
+  width: calc(50% - 20px);
+  justify-content: space-between;
+  text-align: left;
+  align-items: center;
+}
+
+.descricao {
+  width: 70%;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container-img {
+  height: 148px;
+  width: 148px;
+}
+
+.container-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* footer */
+
+footer {
+  background-color: #49997c;
+  padding: 40px;
+  color: white;
+}
+
+.contato {
+  max-width: 1024px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  border-bottom: 2px solid #396d5a;
+}
+
+.contato div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.contato div img,
+.contato div a {
+  flex: 1 1 auto;
+  color: white;
+  text-decoration: none;
+}
+
+.contato div a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  text-align: center;
+  padding-top: 20px;
+}
