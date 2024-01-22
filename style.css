@@ -188,8 +188,8 @@ h2 {
 
 .pousada-card {
   display: flex;
-  width: calc(50% - 20px);
   flex: 1 1 490px;
+  height: 147px;
   justify-content: space-between;
   text-align: left;
   align-items: center;
